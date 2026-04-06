@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="styleSheet" href="style.css" />
+    <title>Task_manager</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Task Manager</h1>
+
+      <div class="task-form">
+        <div>
+          <p>Task Title:</p>
+          <input type="text" id="title" placeholder="Enter task title..." />
+        </div>
+        <div>
+          <p>Task Description:</p>
+          <textarea
+            name="message"
+            type="text"
+            id="description"
+            cols="20"
+            rows="4"
+            placeholder="Enter task description.."
+            required
+          ></textarea>
+        </div>
+        <div>
+          <p>Priority:</p>
+          <select id="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+        <div>
+          <p>Due Date:</p>
+          <input type="date" id="dueDate" />
+        </div>
+        <div>
+          <button id="addBtn">Add Task</button>
+        </div>
+      </div>
+
+      <div class="filters">
+        <button data-filter="all">All (<span id="allCount">0</span>)</button>
+        <button data-filter="completed">
+          Completed (<span id="completedCount">0</span>)
+        </button>
+        <button data-filter="pending">
+          Pending (<span id="pendingCount">0</span>)
+        </button>
+      </div>
+
+      <ul id="taskList"></ul>
+
+      <p class="layo">
+        Made by
+        <a
+          href="https://github.com/Noftyfootie"
+          target="_blank"
+          style="color: #000; text-decoration: none"
+          >@Layo</a
+        >
+        | Frontend developer
+      </p>
+    </div>
+  </body>
+</html>

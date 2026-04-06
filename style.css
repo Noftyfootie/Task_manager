@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  color: #1f2937;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #f59e0b;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.task-form input,
+.task-form select,
+.task-form textarea,
+.task-form button {
+  padding: 12px;
+  border-radius: 12px;
+  width: 100%;
+  border: 2px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.task-form input:focus,
+.task-form select:focus,
+.task-form textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+  outline: none;
+}
+
+input.error,
+textarea.error {
+  border-color: red;
+}
+
+#addBtn {
+  margin-top: 10px;
+  background-color: #20498c;
+  color: white;
+  cursor: pointer;
+}
+
+#addBtn:hover {
+  transform: translateY(-2px);
+  background-color: #1d4ed8;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #eee;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 6px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.task span {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.filters {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filters button {
+  flex: 1;
+  min-width: 90px;
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  border: none;
+  background: #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.filters button.active {
+  background: #3b82f6;
+  color: white;
+}
+
+.filters span {
+  font-weight: bold;
+  margin-left: 4px;
+}
+
+.layo {
+  text-align: center;
+  padding: 20px 0;
+  color: #000;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .task {
+    flex-direction: column;
+  }
+
+  .task div {
+    display: flex;
+    gap: 10px;
+  }
+
+  #addBtn {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 900px;
+  }
+}
