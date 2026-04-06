@@ -96,7 +96,7 @@ The application is fully responsive and optimized for:
 ## Demo
 
 Live version:  
-[Live Demo] [link]
+[Live Demo][https://taskmanageroop.netlify.app/]
 
 ## Screenshots
 
