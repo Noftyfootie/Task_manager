@@ -168,3 +168,4 @@ function loadFromLocalStorage() {
   updateUI();
 }
 loadFromLocalStorage();
+console.log('Task Manager Initialized');
