@@ -169,3 +169,4 @@ function loadFromLocalStorage() {
 }
 loadFromLocalStorage();
 console.log('what');
+console.log();
