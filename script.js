@@ -169,4 +169,4 @@ function loadFromLocalStorage() {
 }
 loadFromLocalStorage();
 console.log('what');
-console.log();
+console.log('sunday');
