@@ -168,5 +168,12 @@ function loadFromLocalStorage() {
   updateUI();
 }
 loadFromLocalStorage();
-console.log('what');
-console.log('sunday');
+
+// const clearBtn = document.getElementById('clearBtn');
+// clearBtn.addEventListener('click', () => {
+//   if (confirm('Are you sure you want to clear all tasks?')) {
+//     manager.clearTasks();
+//     updateUI();
+//     saveToLocalStorage();
+//   }
+// });
