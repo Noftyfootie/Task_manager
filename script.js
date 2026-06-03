@@ -169,4 +169,4 @@ function loadFromLocalStorage() {
 }
 loadFromLocalStorage();
 
-console.log();
+console.log('tired');
