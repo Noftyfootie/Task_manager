@@ -170,3 +170,4 @@ function loadFromLocalStorage() {
 loadFromLocalStorage();
 
 console.log('recipe');
+console.log(challenge);
