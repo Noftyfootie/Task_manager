@@ -168,6 +168,3 @@ function loadFromLocalStorage() {
   updateUI();
 }
 loadFromLocalStorage();
-
-console.log('recipe');
-console.log(challenge);
